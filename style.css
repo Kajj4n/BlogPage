@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "terminal";
+    src: url("fonts/Terminal.ttf");
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "terminal";
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 12vh 1fr 12vh;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25vw;
+}
+
+header h3{
+    cursor: pointer;
+}
+
+#crnt-usr {
+    cursor: unset;
+}
+
+#main > div{
+    min-height: 20vh;
+    width: auto;
+    outline: white dashed;
+}
+
+#logbox{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    outline: white solid;
+    align-self: center;
+    justify-self: center;
+    display: none;
+}
+
+#logbox p{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input{
+    font-family: "terminal";
+    height: 30px;
+    width: 200px;
+    justify-content: center;
+    display: grid;
+    z-index: 1;
+    padding-left: 5px;
+}
+
+input:nth-child(4){
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h4{
+    margin-bottom: 0;
+}
+
+textarea{
+    resize: vertical;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3{
+    margin: 0;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+}
+
+#main{
+    margin: 0 25vw;
+    position: relative;
+    display: unset;
+}
+
+#createp{
+    margin: 0 25vw;
+    position: relative;
+    display: grid;
+}
+
+.post{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    grid-template-columns: 1fr;
+    cursor: pointer;
+}
+
+.post > p:nth-child(3){
+    display: grid;
+    justify-self: flex-end;
+    margin: 0;
+}

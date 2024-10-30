@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>/++\<br>&nbsp;---</h2>
+        <h3 id="home">HOME</h3>
+    </header>
+
+        <div id="main"></div>
+
+        <script>            
+            let data =  localStorage.getItem("post-data");
+            
+            let home = document.getElementById("home");
+            let indivpost = document.getElementById("main");
+
+            indivpost.innerHTML = data;
+
+            indivpost.firstElementChild.style.margin = "0";
+            indivpost.firstElementChild.style.height = "100%";
+
+            home.addEventListener("click", () => {
+                window.location.href = 'index.php';
+            })
+        </script>
+
+</body>
+</html>
